@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+Design : kogge_stone_adder
+Version: T-2022.03-SP2
+Date   : Fri May 22 11:34:23 2026
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           9.745e-05 5.667e-05 1.084e-03 1.238e-03 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 5.667e-05   ( 4.58%)
+  Cell Internal Power  = 9.745e-05   ( 7.87%)
+  Cell Leakage Power   = 1.084e-03   (87.55%)
+                         ---------
+Total Power            = 1.238e-03  (100.00%)
+
+1

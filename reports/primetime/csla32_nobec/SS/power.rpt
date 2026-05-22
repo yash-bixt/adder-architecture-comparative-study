@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+Design : csla32_nobec_flat
+Version: T-2022.03-SP2
+Date   : Fri May 22 11:33:45 2026
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           5.058e-05 2.873e-05 1.839e-05 9.770e-05 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.873e-05   (29.41%)
+  Cell Internal Power  = 5.058e-05   (51.77%)
+  Cell Leakage Power   = 1.839e-05   (18.83%)
+                         ---------
+Total Power            = 9.770e-05  (100.00%)
+
+1

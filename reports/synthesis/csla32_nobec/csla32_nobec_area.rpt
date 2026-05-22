@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : csla32_nobec_flat
+Version: T-2022.03-SP5
+Date   : Sat Feb 28 18:37:09 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home2/synopsys/libraries/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                           98
+Number of nets:                           268
+Number of cells:                          176
+Number of combinational cells:            176
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         70
+Number of references:                      13
+
+Combinational area:                400.530942
+Buf/Inv area:                       95.812289
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              58.949815
+
+Total cell area:                   400.530942
+Total area:                        459.480758
+1

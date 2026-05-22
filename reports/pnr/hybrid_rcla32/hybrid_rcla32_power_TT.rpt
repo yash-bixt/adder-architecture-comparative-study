@@ -1,0 +1,86 @@
+[icc2-lic Thu May 21 20:56:06 2026] Command 'report_power' requires licenses
+[icc2-lic Thu May 21 20:56:06 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu May 21 20:56:06 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 20:56:06 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu May 21 20:56:06 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu May 21 20:56:06 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu May 21 20:56:06 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 20:56:06 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu May 21 20:56:06 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 20:56:06 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu May 21 20:56:06 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 20:56:06 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu May 21 20:56:06 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu May 21 20:56:06 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu May 21 20:56:06 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 20:56:06 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu May 21 20:56:06 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 20:56:06 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu May 21 20:56:06 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : power
+        -significant_digits 2
+Design : hybrid_rcla32
+Version: U-2022.12-SP3
+Date   : Thu May 21 20:56:06 2026
+****************************************
+Information: Activity propagation will be performed for scenario SCEN_TT.
+Information: Doing activity propagation for mode 'FUNC' and corner 'TT' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario SCEN_TT (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: FUNC
+Corner: TT
+Scenario: SCEN_TT
+Voltage: 0.85
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port A2 on cell ctmTdsLR_1_355 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015869 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell ctmTdsLR_1_355 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015869 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CO on cell intadd_5/U19 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U35 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015640 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A1 on cell U59 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015640 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U59 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015640 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell ropt_h_inst_363 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.011730 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A2 on cell ctmTdsLR_1_255 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015755 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell ctmTdsLR_1_255 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015755 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A1 on cell U114 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015011 (POW-046)
+
+  Cell Internal Power    = 2.76e+07 pW ( 68.7%)
+  Net Switching Power    = 1.26e+07 pW ( 31.3%)
+Total Dynamic Power      = 4.02e+07 pW (100.0%)
+
+Cell Leakage Power       = 1.19e+09 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             2.76e+07               1.26e+07               1.19e+09               1.23e+09    (100.0%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     2.76e+07 pW            1.26e+07 pW            1.19e+09 pW            1.23e+09 pW
+1

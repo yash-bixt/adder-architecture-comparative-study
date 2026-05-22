@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : hybrid_rcla32
+Version: T-2022.03-SP5
+Date   : Mon Jan 26 15:15:29 2026
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Cin (input port clocked by VCLK)
+  Endpoint: Sum[31] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hybrid_rcla32      8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock VCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  Cin (in)                                 0.00       0.00 f
+  U47/Y (INVX0_RVT)                        0.02       0.02 r
+  U70/Y (NOR4X1_RVT)                       0.06       0.09 f
+  U72/Y (OAI222X1_RVT)                     0.08       0.16 r
+  U74/Y (NAND3X0_RVT)                      0.06       0.22 f
+  U78/Y (OAI222X1_RVT)                     0.08       0.30 r
+  U80/Y (NAND3X0_RVT)                      0.06       0.36 f
+  U84/Y (OAI222X1_RVT)                     0.08       0.44 r
+  U86/Y (NAND3X0_RVT)                      0.06       0.50 f
+  U90/Y (OAI222X1_RVT)                     0.08       0.59 r
+  U92/Y (NAND3X0_RVT)                      0.06       0.64 f
+  U96/Y (OAI222X1_RVT)                     0.08       0.73 r
+  U98/Y (NAND3X0_RVT)                      0.06       0.78 f
+  U102/Y (OAI222X1_RVT)                    0.08       0.87 r
+  U104/Y (NAND3X0_RVT)                     0.06       0.92 f
+  U108/Y (OAI222X1_RVT)                    0.08       1.01 r
+  U110/Y (NAND3X0_RVT)                     0.05       1.06 f
+  intadd_6/U5/CO (FADDX1_RVT)              0.09       1.14 f
+  intadd_6/U4/CO (FADDX1_RVT)              0.08       1.22 f
+  intadd_6/U3/CO (FADDX1_RVT)              0.08       1.30 f
+  intadd_6/U2/S (FADDX1_RVT)               0.11       1.41 r
+  Sum[31] (out)                            0.00       1.41 r
+  data arrival time                                   1.41
+
+  clock VCLK (rise edge)                   5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -1.41
+  -----------------------------------------------------------
+  slack (MET)                                         3.59
+
+
+1

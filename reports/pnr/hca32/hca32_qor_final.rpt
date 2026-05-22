@@ -1,0 +1,126 @@
+[icc2-lic Thu May 21 21:54:30 2026] Command 'report_qor' requires licenses
+[icc2-lic Thu May 21 21:54:30 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu May 21 21:54:30 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 21:54:30 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu May 21 21:54:30 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu May 21 21:54:30 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu May 21 21:54:30 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 21:54:30 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu May 21 21:54:30 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 21:54:30 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu May 21 21:54:30 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 21:54:30 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu May 21 21:54:30 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu May 21 21:54:30 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu May 21 21:54:30 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 21:54:30 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu May 21 21:54:30 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 21:54:30 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu May 21 21:54:30 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : qor
+Design : han_carlson_32
+Version: U-2022.12-SP3
+Date   : Thu May 21 21:54:30 2026
+****************************************
+
+
+Scenario           'SCEN_FF'
+Timing Path Group  '**in2out_default**'
+----------------------------------------
+Levels of Logic:                     14
+Critical Path Length:              1.12
+Critical Path Slack:               0.28
+Critical Path Clk Period:          2.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'SCEN_SS'
+Timing Path Group  '**in2out_default**'
+----------------------------------------
+Levels of Logic:                     14
+Critical Path Length:              1.12
+Critical Path Slack:               0.18
+Critical Path Clk Period:          2.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.00
+Total Hold Violation:             -0.00
+No. of Hold Violations:               1
+----------------------------------------
+
+Scenario           'SCEN_TT'
+Timing Path Group  '**in2out_default**'
+----------------------------------------
+Levels of Logic:                     14
+Critical Path Length:              1.12
+Critical Path Slack:               0.23
+Critical Path Clk Period:          2.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                    227
+Buf/Inv Cell Count:                  50
+Buf Cell Count:                      26
+Inv Cell Count:                      24
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:           227
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:                0
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       0
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            0.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:              557.34
+Noncombinational Area:             0.00
+Buf/Inv Area:                     86.41
+Total Buffer Area:                55.91
+Total Inverter Area:              30.50
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                    2164.90
+Net YLength:                    1928.35
+----------------------------------------
+Cell Area (netlist):                            557.34
+Cell Area (netlist and physical only):          557.34
+Net Length:                     4093.24
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               296
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

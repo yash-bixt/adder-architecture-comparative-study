@@ -1,0 +1,144 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 10
+	-sort_by slack
+Design : kogge_stone_adder
+Version: T-2022.03-SP2
+Date   : Fri May 22 11:34:21 2026
+****************************************
+
+
+  Startpoint: A[3] (input port clocked by VCLK)
+  Endpoint: Sum[30] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  A[3] (in)                                               0.01 &     0.51 r
+  U301/Y (NAND2X0_RVT)                                    0.04 &     0.55 f
+  U303/Y (OAI21X1_RVT)                                    0.08 &     0.63 r
+  U241/Y (AO21X1_RVT)                                     0.04 &     0.68 r
+  ctmTdsLR_3_123/Y (AO221X1_RVT)                          0.05 &     0.73 r
+  U526/CO (FADDX1_RVT)                                    0.06 &     0.79 r
+  U408/CO (FADDX2_RVT)                                    0.07 &     0.86 r
+  U409/CO (FADDX1_RVT)                                    0.06 &     0.92 r
+  ctmTdsLR_1_17/Y (AO22X1_RVT)                            0.05 &     0.98 r
+  U244/Y (NOR3X0_RVT)                                     0.05 &     1.03 f
+  ctmTdsLR_1_45/Y (NOR3X0_RVT)                            0.05 &     1.08 r
+  ctmTdsLR_1_24/Y (OAI22X1_RVT)                           0.06 &     1.14 f
+  U435/Y (OA21X2_RVT)                                     0.05 &     1.19 f
+  ctmTdsLR_2_43/Y (OA21X1_RVT)                            0.04 &     1.23 f
+  ctmTdsLR_1_42/Y (INVX0_RVT)                             0.02 &     1.25 r
+  U215/Y (INVX0_RVT)                                      0.03 &     1.28 f
+  ctmTdsLR_8_41/Y (NAND2X0_RVT)                           0.03 &     1.31 r
+  ctmTdsLR_1_34/Y (NAND3X0_RVT)                           0.06 &     1.37 f
+  Sum[30] (out)                                           0.00 &     1.37 f
+  data arrival time                                                  1.37
+
+  clock VCLK (rise edge)                                  2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock reconvergence pessimism                           0.00       2.00
+  clock uncertainty                                      -0.15       1.85
+  output external delay                                  -0.50       1.35
+  data required time                                                 1.35
+  ------------------------------------------------------------------------------
+  data required time                                                 1.35
+  data arrival time                                                 -1.37
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: A[3] (input port clocked by VCLK)
+  Endpoint: Sum[29] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  A[3] (in)                                               0.01 &     0.51 r
+  U301/Y (NAND2X0_RVT)                                    0.04 &     0.55 f
+  U303/Y (OAI21X1_RVT)                                    0.08 &     0.63 r
+  U241/Y (AO21X1_RVT)                                     0.04 &     0.68 r
+  ctmTdsLR_3_123/Y (AO221X1_RVT)                          0.05 &     0.73 r
+  U526/CO (FADDX1_RVT)                                    0.06 &     0.79 r
+  U408/CO (FADDX2_RVT)                                    0.07 &     0.86 r
+  U409/CO (FADDX1_RVT)                                    0.06 &     0.92 r
+  ctmTdsLR_1_17/Y (AO22X1_RVT)                            0.05 &     0.98 r
+  U244/Y (NOR3X0_RVT)                                     0.05 &     1.03 f
+  ctmTdsLR_1_45/Y (NOR3X0_RVT)                            0.05 &     1.08 r
+  ctmTdsLR_1_24/Y (OAI22X1_RVT)                           0.06 &     1.14 f
+  U435/Y (OA21X2_RVT)                                     0.05 &     1.19 f
+  ctmTdsLR_2_43/Y (OA21X1_RVT)                            0.04 &     1.23 f
+  ctmTdsLR_1_42/Y (INVX0_RVT)                             0.02 &     1.25 r
+  U527/Y (AO22X1_RVT)                                     0.04 &     1.30 r
+  U528/SO (HADDX1_RVT)                                    0.07 &     1.36 f
+  Sum[29] (out)                                           0.00 &     1.36 f
+  data arrival time                                                  1.36
+
+  clock VCLK (rise edge)                                  2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock reconvergence pessimism                           0.00       2.00
+  clock uncertainty                                      -0.15       1.85
+  output external delay                                  -0.50       1.35
+  data required time                                                 1.35
+  ------------------------------------------------------------------------------
+  data required time                                                 1.35
+  data arrival time                                                 -1.36
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: A[3] (input port clocked by VCLK)
+  Endpoint: Sum[28] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  A[3] (in)                                               0.01 &     0.51 r
+  U301/Y (NAND2X0_RVT)                                    0.04 &     0.55 f
+  U303/Y (OAI21X1_RVT)                                    0.08 &     0.63 r
+  U241/Y (AO21X1_RVT)                                     0.04 &     0.68 r
+  ctmTdsLR_3_123/Y (AO221X1_RVT)                          0.05 &     0.73 r
+  U526/CO (FADDX1_RVT)                                    0.06 &     0.79 r
+  U408/CO (FADDX2_RVT)                                    0.07 &     0.86 r
+  U409/CO (FADDX1_RVT)                                    0.06 &     0.92 r
+  ctmTdsLR_1_17/Y (AO22X1_RVT)                            0.05 &     0.98 r
+  U244/Y (NOR3X0_RVT)                                     0.05 &     1.03 f
+  ctmTdsLR_1_45/Y (NOR3X0_RVT)                            0.05 &     1.08 r
+  ctmTdsLR_1_24/Y (OAI22X1_RVT)                           0.06 &     1.14 f
+  U435/Y (OA21X2_RVT)                                     0.05 &     1.19 f
+  ctmTdsLR_2_43/Y (OA21X1_RVT)                            0.04 &     1.23 f
+  ctmTdsLR_1_42/Y (INVX0_RVT)                             0.02 &     1.25 r
+  U215/Y (INVX0_RVT)                                      0.03 &     1.28 f
+  U482/Y (XOR2X1_RVT)                                     0.07 &     1.36 r
+  Sum[28] (out)                                           0.00 &     1.36 r
+  data arrival time                                                  1.36
+
+  clock VCLK (rise edge)                                  2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock reconvergence pessimism                           0.00       2.00
+  clock uncertainty                                      -0.15       1.85
+  output external delay                                  -0.50       1.35
+  data required time                                                 1.35
+  ------------------------------------------------------------------------------
+  data required time                                                 1.35
+  data arrival time                                                 -1.36
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+1

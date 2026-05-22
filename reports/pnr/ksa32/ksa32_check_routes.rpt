@@ -1,0 +1,167 @@
+[icc2-lic Thu May 21 21:55:53 2026] Command 'check_routes' requires licenses
+[icc2-lic Thu May 21 21:55:53 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu May 21 21:55:53 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 21:55:53 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu May 21 21:55:53 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu May 21 21:55:53 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu May 21 21:55:53 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 21:55:53 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu May 21 21:55:53 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu May 21 21:55:53 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu May 21 21:55:53 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 21:55:53 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu May 21 21:55:53 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu May 21 21:55:53 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu May 21 21:55:53 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 21:55:53 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu May 21 21:55:53 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu May 21 21:55:53 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu May 21 21:55:53 2026] Check-out of alternate set of keys directly with queueing was successful
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer CO. (ZRT-022)
+Warning: Port VDD of cell kogge_stone_32
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Port VSS of cell kogge_stone_32
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 5.32 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 5.32 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 357, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 357 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   22  Alloctr   23  Proc 13557 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/1 Partitions, Violations =	77
+[DRC CHECK] Elapsed real time: 0:00:00 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used   91  Alloctr   92  Proc 13557 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	77
+	Off-grid : 77
+
+
+Total Wire Length =                    4549 micron
+Total Number of Contacts =             1662
+Total Number of Wires =                1875
+Total Number of PtConns =              176
+Total Number of Routed Wires =       1871
+Total Routed Wire Length =           4528 micron
+Total Number of Routed Contacts =       1662
+	Layer                 M1 :        160 micron
+	Layer                 M2 :       1563 micron
+	Layer                 M3 :       1889 micron
+	Layer                 M4 :        913 micron
+	Layer                 M5 :          1 micron
+	Layer                 M6 :          2 micron
+	Layer                 M7 :          0 micron
+	Layer                 M8 :          0 micron
+	Layer                 M9 :          0 micron
+	Layer               MRDL :          0 micron
+	Via       VIA56SQ_C(rot) :          2
+	Via            VIA45SQ_C :          4
+	Via       VIA34SQ_C(rot) :         68
+	Via            VIA23SQ_C :        664
+	Via       VIA23SQ_C(rot) :          9
+	Via            VIA12SQ_C :         22
+	Via       VIA12SQ_C(rot) :        829
+	Via       VIA12LG_C(rot) :          1
+	Via   VIA12SQ_C(rot)_1x2 :          8
+	Via   VIA12SQ_C(rot)_2x1 :          2
+	Via        VIA12SQ_C_1x2 :          7
+	Via          VIA12SQ_1x2 :         46
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  3.79% (63 / 1662 vias)
+ 
+    Layer VIA1       =  6.89% (63     / 915     vias)
+        Weight 1     =  6.89% (63      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 93.11% (852     vias)
+    Layer VIA2       =  0.00% (0      / 673     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (673     vias)
+    Layer VIA3       =  0.00% (0      / 68      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (68      vias)
+    Layer VIA4       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+    Layer VIA5       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+  Total double via conversion rate    =  3.79% (63 / 1662 vias)
+ 
+    Layer VIA1       =  6.89% (63     / 915     vias)
+    Layer VIA2       =  0.00% (0      / 673     vias)
+    Layer VIA3       =  0.00% (0      / 68      vias)
+    Layer VIA4       =  0.00% (0      / 4       vias)
+    Layer VIA5       =  0.00% (0      / 2       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  3.79% (63 / 1662 vias)
+ 
+    Layer VIA1       =  6.89% (63     / 915     vias)
+        Weight 1     =  6.89% (63      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 93.11% (852     vias)
+    Layer VIA2       =  0.00% (0      / 673     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (673     vias)
+    Layer VIA3       =  0.00% (0      / 68      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (68      vias)
+    Layer VIA4       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+    Layer VIA5       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 357, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 77
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+

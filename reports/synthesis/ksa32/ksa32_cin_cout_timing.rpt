@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : kogge_stone_adder
+Version: T-2022.03-SP5
+Date   : Sat Feb 28 18:38:36 2026
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Cin (input port)
+  Endpoint: Cout (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  kogge_stone_adder  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  Cin (in)                                 0.00       0.00 r
+  U295/Y (INVX0_RVT)                       0.03       0.03 f
+  U228/Y (OAI21X1_RVT)                     0.07       0.10 r
+  U260/Y (AO21X1_RVT)                      0.06       0.16 r
+  U526/CO (FADDX1_RVT)                     0.09       0.25 r
+  U408/CO (FADDX1_RVT)                     0.10       0.34 r
+  U409/CO (FADDX1_RVT)                     0.10       0.44 r
+  U410/Y (NAND2X0_RVT)                     0.03       0.47 f
+  U412/Y (AOI21X1_RVT)                     0.07       0.55 r
+  U244/Y (NOR3X0_RVT)                      0.07       0.61 f
+  U246/Y (NOR2X0_RVT)                      0.06       0.67 r
+  U199/Y (OR2X1_RVT)                       0.05       0.72 r
+  U255/Y (AOI21X1_RVT)                     0.08       0.80 f
+  U435/Y (OA21X1_RVT)                      0.06       0.86 f
+  U218/Y (OAI21X1_RVT)                     0.07       0.93 r
+  Cout (out)                               0.00       0.93 r
+  data arrival time                                   0.93
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

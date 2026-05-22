@@ -1,0 +1,201 @@
+****************************************
+Report : cell
+Design : csla32_nobec_flat
+Version: U-2022.12-SP3
+Date   : Tue Apr 21 18:15:11 2026
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+U101                      INVX1_RVT       saed32rvt_base_frame_timing
+U102                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U103                      OA221X1_RVT     saed32rvt_base_frame_timing
+U104                      INVX0_RVT       saed32rvt_base_frame_timing
+U108                      INVX0_RVT       saed32rvt_base_frame_timing
+U109                      INVX0_RVT       saed32rvt_base_frame_timing
+U110                      INVX0_RVT       saed32rvt_base_frame_timing
+U111                      INVX0_RVT       saed32rvt_base_frame_timing
+U112                      INVX0_RVT       saed32rvt_base_frame_timing
+U113                      INVX0_RVT       saed32rvt_base_frame_timing
+U114                      INVX0_RVT       saed32rvt_base_frame_timing
+U115                      INVX0_RVT       saed32rvt_base_frame_timing
+U118                      INVX0_RVT       saed32rvt_base_frame_timing
+U119                      INVX0_RVT       saed32rvt_base_frame_timing
+U121                      INVX0_RVT       saed32rvt_base_frame_timing
+U123                      INVX0_RVT       saed32rvt_base_frame_timing
+U124                      INVX0_RVT       saed32rvt_base_frame_timing
+U127                      INVX0_RVT       saed32rvt_base_frame_timing
+U131                      INVX0_RVT       saed32rvt_base_frame_timing
+U133                      INVX0_RVT       saed32rvt_base_frame_timing
+U138                      INVX0_RVT       saed32rvt_base_frame_timing
+U140                      INVX0_RVT       saed32rvt_base_frame_timing
+U141                      INVX0_RVT       saed32rvt_base_frame_timing
+U142                      INVX0_RVT       saed32rvt_base_frame_timing
+U144                      INVX0_RVT       saed32rvt_base_frame_timing
+U145                      OR2X1_RVT       saed32rvt_base_frame_timing
+U146                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U147                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U148                      OA21X1_RVT      saed32rvt_base_frame_timing
+U149                      OA21X1_RVT      saed32rvt_base_frame_timing
+U151                      AND2X1_RVT      saed32rvt_base_frame_timing
+U152                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U153                      OA21X1_RVT      saed32rvt_base_frame_timing
+U154                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U155                      OA21X1_RVT      saed32rvt_base_frame_timing
+U156                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U157                      OA21X1_RVT      saed32rvt_base_frame_timing
+U158                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U159                      OA21X1_RVT      saed32rvt_base_frame_timing
+U160                      AND2X1_RVT      saed32rvt_base_frame_timing
+U161                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U162                      AO21X1_RVT      saed32rvt_base_frame_timing
+U163                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U164                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U165                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U166                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U167                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U169                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U170                      OA21X1_RVT      saed32rvt_base_frame_timing
+U172                      INVX0_RVT       saed32rvt_base_frame_timing
+U176                      INVX0_RVT       saed32rvt_base_frame_timing
+U177                      INVX0_RVT       saed32rvt_base_frame_timing
+U179                      INVX0_RVT       saed32rvt_base_frame_timing
+U180                      INVX0_RVT       saed32rvt_base_frame_timing
+U181                      INVX0_RVT       saed32rvt_base_frame_timing
+U182                      INVX0_RVT       saed32rvt_base_frame_timing
+U183                      INVX0_RVT       saed32rvt_base_frame_timing
+U184                      INVX0_RVT       saed32rvt_base_frame_timing
+U185                      INVX0_RVT       saed32rvt_base_frame_timing
+U186                      INVX0_RVT       saed32rvt_base_frame_timing
+U187                      INVX0_RVT       saed32rvt_base_frame_timing
+U188                      INVX0_RVT       saed32rvt_base_frame_timing
+U189                      AO22X1_RVT      saed32rvt_base_frame_timing
+U191                      INVX0_RVT       saed32rvt_base_frame_timing
+U192                      NAND2X0_RVT     saed32rvt_base_frame_timing
+U44                       OA21X1_RVT      saed32rvt_base_frame_timing
+U46                       OA21X1_RVT      saed32rvt_base_frame_timing
+U47                       OA21X1_RVT      saed32rvt_base_frame_timing
+U48                       OA21X1_RVT      saed32rvt_base_frame_timing
+U49                       OA21X1_RVT      saed32rvt_base_frame_timing
+U50                       OA21X1_RVT      saed32rvt_base_frame_timing
+U51                       OA21X1_RVT      saed32rvt_base_frame_timing
+U52                       OA21X1_RVT      saed32rvt_base_frame_timing
+U53                       OA21X1_RVT      saed32rvt_base_frame_timing
+U54                       OA21X1_RVT      saed32rvt_base_frame_timing
+U55                       OA21X1_RVT      saed32rvt_base_frame_timing
+U56                       OA21X1_RVT      saed32rvt_base_frame_timing
+U57                       OA21X1_RVT      saed32rvt_base_frame_timing
+U58                       OA21X1_RVT      saed32rvt_base_frame_timing
+U59                       OA21X1_RVT      saed32rvt_base_frame_timing
+U60                       OA21X1_RVT      saed32rvt_base_frame_timing
+U61                       OA21X1_RVT      saed32rvt_base_frame_timing
+U62                       OA21X1_RVT      saed32rvt_base_frame_timing
+U63                       OA21X1_RVT      saed32rvt_base_frame_timing
+U64                       OA21X1_RVT      saed32rvt_base_frame_timing
+U65                       OA21X1_RVT      saed32rvt_base_frame_timing
+U66                       OA21X1_RVT      saed32rvt_base_frame_timing
+U67                       OA21X1_RVT      saed32rvt_base_frame_timing
+U69                       OR2X2_RVT       saed32rvt_base_frame_timing
+U75                       INVX0_RVT       saed32rvt_base_frame_timing
+U80                       NOR2X2_RVT      saed32rvt_base_frame_timing
+U83                       OR2X2_RVT       saed32rvt_base_frame_timing
+U84                       OR2X1_RVT       saed32rvt_base_frame_timing
+U86                       OR2X1_RVT       saed32rvt_base_frame_timing
+U88                       AO21X1_RVT      saed32rvt_base_frame_timing
+U89                       OR2X1_RVT       saed32rvt_base_frame_timing
+U90                       OR2X2_RVT       saed32rvt_base_frame_timing
+ZBUF_17_inst_15           NBUFFX2_RVT     saed32rvt_base_frame_timing
+ZBUF_2_inst_4             NBUFFX2_RVT     saed32rvt_base_frame_timing
+ZBUF_9_inst_1             NBUFFX2_RVT     saed32rvt_base_frame_timing
+ZBUF_9_inst_10            NBUFFX2_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_101            MUX21X1_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_102            AND3X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_1_103            INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_23             NAND3X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_25             NAND3X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_30             NAND3X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_33             NAND4X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_35             NAND2X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_38             OA21X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_1_42             NAND3X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_45             NAND3X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_57             AND2X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_1_58             NAND2X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_61             OR2X2_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_62             INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_67             INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_68             AO22X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_1_73             OA21X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_1_75             INVX1_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_76             NAND2X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_78             NAND3X1_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_80             NAND4X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_86             INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_88             INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_90             OA222X1_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_92             INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_1_94             AND2X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_1_95             AND3X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_1_96             NAND3X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_1_99             INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_2_100            AOI21X1_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_2_104            AND4X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_2_36             AND2X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_2_69             OR2X1_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_2_87             AND2X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_2_89             AOI21X1_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_2_97             NAND2X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_3_32             AND2X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_3_44             AND3X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_3_52             AND2X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_3_64             INVX0_RVT       saed32rvt_base_frame_timing
+ctmTdsLR_3_70             AND2X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_3_98             NAND3X0_RVT     saed32rvt_base_frame_timing
+ctmTdsLR_4_56             XOR3X1_RVT      saed32rvt_base_frame_timing
+ctmTdsLR_4_65             OA21X1_RVT      saed32rvt_base_frame_timing
+intadd_2/U10              FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U2               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U3               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U4               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U5               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U6               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U7               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U8               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_2/U9               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_3/U2               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_3/U3               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_3/U4               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_3/U5               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_3/U6               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_3/U7               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_4/U2               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_4/U3               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_4/U4               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_4/U5               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_4/U6               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_5/U2               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_5/U3               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_5/U5               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_6/U2               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_6/U3               FADDX1_RVT      saed32rvt_base_frame_timing
+intadd_6/U4               FADDX1_RVT      saed32rvt_base_frame_timing
+ropt_h_inst_108           DELLN1X2_RVT    saed32rvt_base_frame_timing
+--------------------------------------------------------------------------------
+Total 173 cells
+
+1

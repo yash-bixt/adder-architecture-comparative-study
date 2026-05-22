@@ -1,0 +1,86 @@
+[icc2-lic Tue Apr 21 18:15:11 2026] Command 'report_power' requires licenses
+[icc2-lic Tue Apr 21 18:15:11 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:15:11 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Tue Apr 21 18:15:11 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:15:11 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:15:11 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:15:11 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Tue Apr 21 18:15:11 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:15:11 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Tue Apr 21 18:15:11 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:15:11 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:15:11 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : power
+        -significant_digits 2
+Design : csla32_nobec_flat
+Version: U-2022.12-SP3
+Date   : Tue Apr 21 18:15:11 2026
+****************************************
+Information: Activity propagation will be performed for scenario SCEN_TT.
+Information: Doing activity propagation for mode 'FUNC' and corner 'TT' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario SCEN_TT (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: FUNC
+Corner: TT
+Scenario: SCEN_TT
+Voltage: 0.85
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell intadd_2/U10 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013371 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CO on cell intadd_2/U10 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013371 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port S on cell intadd_2/U10 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013371 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell intadd_2/U9 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013943 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CO on cell intadd_2/U9 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013943 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port S on cell intadd_2/U9 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013943 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell intadd_2/U8 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013638 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CO on cell intadd_2/U8 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013638 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port S on cell intadd_2/U8 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013638 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell intadd_2/U7 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.014324 (POW-046)
+
+  Cell Internal Power    = 1.70e+07 pW ( 55.4%)
+  Net Switching Power    = 1.37e+07 pW ( 44.6%)
+Total Dynamic Power      = 3.07e+07 pW (100.0%)
+
+Cell Leakage Power       = 6.69e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             1.70e+07               1.37e+07               6.69e+08               7.00e+08    (100.0%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.70e+07 pW            1.37e+07 pW            6.69e+08 pW            7.00e+08 pW
+1

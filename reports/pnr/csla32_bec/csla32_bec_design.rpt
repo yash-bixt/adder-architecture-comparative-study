@@ -1,0 +1,73 @@
+****************************************
+Report : design
+Design : csla32_bec
+Version: U-2022.12-SP3
+Date   : Thu May 21 20:56:32 2026
+****************************************
+
+Total number of std cells in library : 286
+Total number of dont_use lib cells   : 7
+Total number of dont_touch lib cells : 7
+Total number of buffers              : 11
+Total number of inverters            : 15
+Total number of flip-flops           : 106
+Total number of latches              : 12
+Total number of ICGs                 : 12
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS      179      416.288
+unit                  179      416.288
+Standard cells        179      416.288
+unit                  179      416.288
+Hard macro cells        0        0.000
+unit                  179      416.288
+Soft macro cells        0        0.000
+unit                  179      416.288
+Always on cells         0        0.000
+unit                  179      416.288
+Physical only           0        0.000
+unit                  179      416.288
+Fixed cells             0        0.000
+unit                  179      416.288
+Moveable cells        179      416.288
+unit                  179      416.288
+Sequential              0        0.000
+unit                  179      416.288
+Buffer/inverter        57       80.055
+unit                  179      416.288
+ICG cells               0        0.000
+unit                  179      416.288
+
+Logic Hierarchies                    : 0
+Design Masters count                 : 21
+Total Flat nets count                : 270
+Total FloatingNets count             : 0
+Total no of Ports                    : 100
+Number of Master Clocks in design    : 1
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 7 (1 of them Non Default)
+Number of Scan Chains in design      : 0
+List of Modes                        : FUNC
+List of Corners                      : FF, TT, SS
+List of Scenarios                    : SCEN_FF, SCEN_SS, SCEN_TT
+
+Core Area                            : 640.443
+Chip Area                            : 1246.603
+Total Site Row Area                  : 640.443
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 71 (61 of them have unknown routing dir.)
+
+Total wire length                    : 3129.85 micron
+Total number of wires                : 1346
+Total number of contacts             : 1164
+1

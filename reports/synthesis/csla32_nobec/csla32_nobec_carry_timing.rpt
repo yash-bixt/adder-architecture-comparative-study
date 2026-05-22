@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : csla32_nobec_flat
+Version: T-2022.03-SP5
+Date   : Sat Feb 28 18:37:09 2026
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: A[0] (input port)
+  Endpoint: Sum[31] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  csla32_nobec_flat  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  A[0] (in)                                0.00       0.00 r
+  U151/Y (AND2X1_RVT)                      0.05       0.05 r
+  intadd_6/U4/CO (FADDX1_RVT)              0.09       0.14 r
+  intadd_6/U3/CO (FADDX1_RVT)              0.09       0.22 r
+  intadd_6/U2/S (FADDX1_RVT)               0.12       0.34 f
+  U162/Y (AO21X1_RVT)                      0.06       0.40 f
+  U163/Y (NAND2X0_RVT)                     0.04       0.45 r
+  U87/Y (OR2X1_RVT)                        0.06       0.50 r
+  U86/Y (OR2X1_RVT)                        0.05       0.55 r
+  U85/Y (NOR2X0_RVT)                       0.06       0.62 f
+  U164/Y (NAND2X0_RVT)                     0.03       0.65 r
+  U165/Y (NAND2X0_RVT)                     0.04       0.68 f
+  U166/Y (NAND2X0_RVT)                     0.05       0.73 r
+  U84/Y (OR2X1_RVT)                        0.06       0.79 r
+  U83/Y (OR2X1_RVT)                        0.05       0.84 r
+  U82/Y (OR2X1_RVT)                        0.05       0.89 r
+  U80/Y (NOR2X0_RVT)                       0.07       0.96 f
+  U88/Y (AO21X1_RVT)                       0.06       1.01 f
+  U167/Y (NAND2X0_RVT)                     0.05       1.06 r
+  U79/Y (OR2X1_RVT)                        0.06       1.11 r
+  U78/Y (OR2X1_RVT)                        0.05       1.16 r
+  U77/Y (OR2X1_RVT)                        0.05       1.22 r
+  U76/Y (OR2X1_RVT)                        0.05       1.27 r
+  U91/Y (OR3X1_RVT)                        0.05       1.32 r
+  U168/Y (NAND2X0_RVT)                     0.04       1.36 f
+  U169/Y (NAND2X0_RVT)                     0.05       1.40 r
+  U74/Y (OR2X1_RVT)                        0.06       1.46 r
+  U73/Y (OR2X1_RVT)                        0.05       1.51 r
+  U72/Y (OR2X1_RVT)                        0.05       1.56 r
+  U71/Y (OR2X1_RVT)                        0.05       1.61 r
+  U70/Y (OR2X1_RVT)                        0.05       1.66 r
+  U69/Y (OR2X1_RVT)                        0.05       1.72 r
+  U68/Y (OR2X1_RVT)                        0.05       1.77 r
+  U90/Y (OR2X1_RVT)                        0.05       1.82 r
+  U89/Y (OR2X1_RVT)                        0.05       1.87 r
+  U170/Y (OA21X1_RVT)                      0.04       1.91 r
+  Sum[31] (out)                            0.00       1.91 r
+  data arrival time                                   1.91
+
+  max_delay                                2.00       2.00
+  output external delay                    0.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.91
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+1

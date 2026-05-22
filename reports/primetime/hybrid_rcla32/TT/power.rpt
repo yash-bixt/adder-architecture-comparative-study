@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+Design : hybrid_rcla32
+Version: T-2022.03-SP2
+Date   : Fri May 22 11:34:09 2026
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           7.581e-05 3.552e-05 6.527e-05 1.766e-04 (100.00%) 
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 3.552e-05   (20.11%)
+  Cell Internal Power  = 7.581e-05   (42.93%)
+  Cell Leakage Power   = 6.527e-05   (36.96%)
+                         ---------
+Total Power            = 1.766e-04  (100.00%)
+
+1

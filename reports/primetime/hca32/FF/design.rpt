@@ -1,0 +1,56 @@
+****************************************
+Report : design
+Design : han_carlson_32
+Version: T-2022.03-SP2
+Date   : Fri May 22 11:34:00 2026
+****************************************
+
+Design Attribute                         Value
+---------------------------------------------------------------------------
+Operating Conditions:
+  analysis_type                          on_chip_variation
+  operating_condition_min_name           ff1p16vn40c
+  process_min                            1.01
+  temperature_min                        -40
+  voltage_min                            1.16
+  tree_type_min                          worst_case
+
+  operating_condition_max_name           ff1p16vn40c
+  process_max                            1.01
+  temperature_max                        -40
+  voltage_max                            1.16
+  tree_type_max                          worst_case
+
+Wire Load:                               (use report_wire_load for more information)
+  wire_load_mode                         enclosed
+  wire_load_model_max                    8000
+  wire_load_model_library_max            saed32rvt_ff1p16vn40c
+  wire_load_selection_type_max           automatic-by-area
+  wire_load_model_min                    8000
+  wire_load_model_library_min            saed32rvt_ff1p16vn40c
+  wire_load_selection_type_min           automatic-by-area
+  wire_load_selection_group_max          predcaps
+  wire_load_selection_group_min          predcaps
+  wire_load_min_block_size               0
+
+Design Rules:
+  max_capacitance                        9
+  min_capacitance                        --
+  max_fanout                             --
+  max_transition                         0.2
+  static_integrity                       --
+  dynamic_integrity                      --
+  max_area                               --
+
+Timing Ranges:
+  early_factor                           --
+  late_factor                            --
+
+Pin Input Delays:
+None specified.
+
+Pin Output Delays:
+None specified.
+Fast Analysis:                           disabled
+
+1

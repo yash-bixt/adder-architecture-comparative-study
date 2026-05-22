@@ -1,0 +1,34 @@
+[icc2-lic Sun Mar 22 19:38:41 2026] Command 'report_timing' requires licenses
+[icc2-lic Sun Mar 22 19:38:41 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Mar 22 19:38:41 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Mar 22 19:38:41 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Check-out of alternate set of keys directly with queueing was successful
+Warning: Scenario func_ff is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario func_tt is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+        -nosplit
+Design : rcla_32
+Version: U-2022.12-SP3
+Date   : Sun Mar 22 19:38:41 2026
+****************************************
+No paths.
+1

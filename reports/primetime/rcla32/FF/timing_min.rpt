@@ -1,0 +1,297 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-slack_lesser_than 0.00
+	-max_paths 10
+	-sort_by slack
+Design : rcla_32
+Version: T-2022.03-SP2
+Date   : Fri May 22 11:34:34 2026
+****************************************
+
+
+  Startpoint: B[5] (input port clocked by VCLK)
+  Endpoint: Sum[5] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  B[5] (in)                                               0.01 &     0.01 r
+  ctmTdsLR_5_532/Y (XNOR3X1_RVT)                          0.04 &     0.05 f
+  Sum[5] (out)                                            0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: A[11] (input port clocked by VCLK)
+  Endpoint: Sum[11] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  A[11] (in)                                              0.01 &     0.01 r
+  ctmTdsLR_1_269/Y (XOR3X1_RVT)                           0.04 &     0.05 f
+  Sum[11] (out)                                           0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: A[21] (input port clocked by VCLK)
+  Endpoint: Sum[21] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  A[21] (in)                                              0.01 &     0.01 r
+  ctmTdsLR_1_137/Y (XOR3X1_RVT)                           0.04 &     0.05 f
+  Sum[21] (out)                                           0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: A[31] (input port clocked by VCLK)
+  Endpoint: Sum[31] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  A[31] (in)                                              0.01 &     0.01 r
+  ctmTdsLR_1_323/Y (XOR3X1_RVT)                           0.04 &     0.05 f
+  Sum[31] (out)                                           0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: A[31] (input port clocked by VCLK)
+  Endpoint: Cout (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock VCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  A[31] (in)                               0.02 &     0.02 f
+  ctmTdsLR_2_76/Y (OR2X1_RVT)              0.02 &     0.03 f
+  ctmTdsLR_1_75/Y (AO21X1_RVT)             0.02 &     0.05 f
+  Cout (out)                               0.00 &     0.05 f
+  data arrival time                                   0.05
+
+  clock VCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock reconvergence pessimism            0.00       0.00
+  clock uncertainty                        0.06       0.06
+  output external delay                    0.00       0.06
+  data required time                                  0.06
+  ---------------------------------------------------------------
+  data required time                                  0.06
+  data arrival time                                  -0.05
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: B[25] (input port clocked by VCLK)
+  Endpoint: Sum[25] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  B[25] (in)                                              0.01 &     0.01 r
+  ctmTdsLR_1_174/Y (XOR3X1_RVT)                           0.04 &     0.05 f
+  Sum[25] (out)                                           0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: A[9] (input port clocked by VCLK)
+  Endpoint: Sum[9] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  A[9] (in)                                               0.01 &     0.01 r
+  ctmTdsLR_8_560/Y (XNOR3X1_RVT)                          0.04 &     0.05 f
+  Sum[9] (out)                                            0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: B[6] (input port clocked by VCLK)
+  Endpoint: Sum[6] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  B[6] (in)                                               0.01 &     0.01 r
+  ctmTdsLR_1_516/Y (XNOR3X1_RVT)                          0.05 &     0.05 f
+  Sum[6] (out)                                            0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: A[1] (input port clocked by VCLK)
+  Endpoint: Sum[1] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  A[1] (in)                                               0.01 &     0.01 r
+  intadd_6/U32/S (FADDX1_RVT)                             0.03 &     0.04 f
+  ropt_h_inst_589/Y (NBUFFX2_RVT)                         0.02 &     0.05 f
+  Sum[1] (out)                                            0.00 &     0.05 f
+  data arrival time                                                  0.05
+
+  clock VCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.06       0.06
+  output external delay                                   0.00       0.06
+  data required time                                                 0.06
+  ------------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: B[22] (input port clocked by VCLK)
+  Endpoint: Sum[22] (output port clocked by VCLK)
+  Path Group: VCLK
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock VCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  B[22] (in)                               0.01 &     0.01 r
+  ctmTdsLR_4_25/Y (XOR3X2_RVT)             0.04 &     0.05 f
+  Sum[22] (out)                            0.00 &     0.05 f
+  data arrival time                                   0.05
+
+  clock VCLK (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock reconvergence pessimism            0.00       0.00
+  clock uncertainty                        0.06       0.06
+  output external delay                    0.00       0.06
+  data required time                                  0.06
+  ---------------------------------------------------------------
+  data required time                                  0.06
+  data arrival time                                  -0.05
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+Warning: report_timing has satisfied the max_paths criteria. There are 15 further endpoints which have paths of interest with slack less than     0.00 that were not considered when generating this report. (UITE-502)
+
+1

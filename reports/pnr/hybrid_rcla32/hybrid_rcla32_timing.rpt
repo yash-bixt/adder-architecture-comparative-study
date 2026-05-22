@@ -1,0 +1,949 @@
+[icc2-lic Sun Mar 15 23:10:13 2026] Command 'report_timing' requires licenses
+[icc2-lic Sun Mar 15 23:10:13 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 15 23:10:13 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Mar 15 23:10:13 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 15 23:10:13 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 15 23:10:13 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 15 23:10:13 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Mar 15 23:10:13 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 15 23:10:13 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Mar 15 23:10:13 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 15 23:10:13 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 15 23:10:13 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : hybrid_rcla32
+Version: U-2022.12-SP3
+Date   : Sun Mar 15 23:10:13 2026
+****************************************
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[31] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U92/Y (AO21X1_RVT)                               0.05      1.02 r
+  U116/Y (AO21X1_RVT)                              0.05      1.07 r
+  intadd_1/U4/CO (FADDX1_RVT)                      0.05      1.12 r
+  U123/Y (AO22X1_RVT)                              0.04      1.16 r
+  intadd_1/U2/S (FADDX1_RVT)                       0.09      1.25 f
+  Sum[31] (out)                                    0.00      1.25 f
+  data arrival time                                          1.25
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.25
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.25
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Cout (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U92/Y (AO21X1_RVT)                               0.05      1.02 r
+  U116/Y (AO21X1_RVT)                              0.05      1.07 r
+  intadd_1/U4/CO (FADDX1_RVT)                      0.05      1.12 r
+  U123/Y (AO22X1_RVT)                              0.04      1.16 r
+  intadd_1/U2/CO (FADDX1_RVT)                      0.07      1.23 r
+  Cout (out)                                       0.00      1.23 r
+  data arrival time                                          1.23
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.23
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.27
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[30] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U92/Y (AO21X1_RVT)                               0.05      1.02 r
+  U116/Y (AO21X1_RVT)                              0.05      1.07 r
+  intadd_1/U4/CO (FADDX1_RVT)                      0.05      1.12 r
+  U64/Y (XNOR2X1_RVT)                              0.08      1.20 r
+  Sum[30] (out)                                    0.00      1.20 r
+  data arrival time                                          1.20
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.20
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.30
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[29] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U92/Y (AO21X1_RVT)                               0.05      1.02 r
+  U116/Y (AO21X1_RVT)                              0.05      1.07 r
+  intadd_1/U4/S (FADDX1_RVT)                       0.09      1.16 f
+  Sum[29] (out)                                    0.00      1.16 f
+  data arrival time                                          1.16
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.34
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[28] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U92/Y (AO21X1_RVT)                               0.05      1.02 r
+  U41/Y (INVX0_RVT)                                0.01      1.03 f
+  U118/Y (OA21X1_RVT)                              0.03      1.07 f
+  U120/Y (XNOR2X1_RVT)                             0.08      1.14 r
+  Sum[28] (out)                                    0.00      1.14 r
+  data arrival time                                          1.14
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.36
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[26] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U94/Y (AO21X1_RVT)                               0.05      1.02 r
+  U40/Y (INVX0_RVT)                                0.01      1.03 f
+  U96/Y (OA21X1_RVT)                               0.03      1.06 f
+  U99/Y (XNOR2X1_RVT)                              0.08      1.14 r
+  Sum[26] (out)                                    0.00      1.14 r
+  data arrival time                                          1.14
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.36
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[27] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U92/Y (AO21X1_RVT)                               0.05      1.02 r
+  U134/Y (XNOR2X1_RVT)                             0.08      1.10 r
+  Sum[27] (out)                                    0.00      1.10 r
+  data arrival time                                          1.10
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.40
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[25] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U94/Y (AO21X1_RVT)                               0.05      1.02 r
+  U133/Y (XNOR2X1_RVT)                             0.08      1.10 r
+  Sum[25] (out)                                    0.00      1.10 r
+  data arrival time                                          1.10
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.40
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[24] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U42/Y (INVX0_RVT)                                0.01      0.98 f
+  U111/Y (OA21X1_RVT)                              0.04      1.02 f
+  U113/Y (XNOR2X1_RVT)                             0.08      1.09 r
+  Sum[24] (out)                                    0.00      1.09 r
+  data arrival time                                          1.09
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.41
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[23] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/CO (FADDX1_RVT)                     0.06      0.97 r
+  U132/Y (XNOR2X1_RVT)                             0.08      1.05 r
+  Sum[23] (out)                                    0.00      1.05 r
+  data arrival time                                          1.05
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.05
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.45
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[22] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U147/Y (AO22X1_RVT)                              0.04      0.91 r
+  intadd_1/U11/S (FADDX1_RVT)                      0.09      1.00 f
+  Sum[22] (out)                                    0.00      1.00 f
+  data arrival time                                          1.00
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -1.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.50
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[21] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/CO (FADDX1_RVT)                     0.05      0.87 r
+  U131/Y (XNOR2X1_RVT)                             0.08      0.95 r
+  Sum[21] (out)                                    0.00      0.95 r
+  data arrival time                                          0.95
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.95
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.55
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[20] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U150/Y (AO22X1_RVT)                              0.04      0.82 r
+  intadd_1/U13/S (FADDX1_RVT)                      0.09      0.91 f
+  Sum[20] (out)                                    0.00      0.91 f
+  data arrival time                                          0.91
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.91
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.59
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[18] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U72/Y (AOI21X1_RVT)                              0.05      0.78 f
+  U104/Y (XOR2X1_RVT)                              0.07      0.86 r
+  Sum[18] (out)                                    0.00      0.86 r
+  data arrival time                                          0.86
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.86
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.64
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[19] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U101/Y (AO21X1_RVT)                              0.05      0.78 r
+  U130/Y (XNOR2X1_RVT)                             0.08      0.86 r
+  Sum[19] (out)                                    0.00      0.86 r
+  data arrival time                                          0.86
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.86
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.64
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[16] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U71/Y (AOI21X1_RVT)                              0.05      0.73 f
+  U90/Y (XNOR2X1_RVT)                              0.08      0.81 r
+  Sum[16] (out)                                    0.00      0.81 r
+  data arrival time                                          0.81
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.81
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.69
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[17] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U87/Y (AO21X1_RVT)                               0.05      0.73 r
+  U139/Y (XNOR2X1_RVT)                             0.08      0.81 r
+  Sum[17] (out)                                    0.00      0.81 r
+  data arrival time                                          0.81
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.81
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.69
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[15] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/CO (FADDX1_RVT)                     0.05      0.68 r
+  U129/Y (XNOR2X1_RVT)                             0.08      0.77 r
+  Sum[15] (out)                                    0.00      0.77 r
+  data arrival time                                          0.77
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.77
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.73
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[14] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U83/Y (AO21X1_RVT)                               0.05      0.63 r
+  intadd_1/U19/S (FADDX1_RVT)                      0.09      0.72 f
+  Sum[14] (out)                                    0.00      0.72 f
+  data arrival time                                          0.72
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.72
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.78
+
+
+
+  Startpoint: Cin (input port)
+  Endpoint: Sum[12] (output port)
+  Mode: func
+  Corner: typ
+  Scenario: func_typ
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  unclocked startpoint                             0.00      0.00
+
+  Cin (in)                                         0.00      0.00 r
+  U126/Y (NAND2X0_RVT)                             0.01      0.01 f
+  U125/Y (NAND3X0_RVT)                             0.04      0.05 r
+  intadd_1/U32/CO (FADDX1_RVT)                     0.05      0.10 r
+  intadd_1/U31/CO (FADDX1_RVT)                     0.05      0.15 r
+  intadd_1/U30/CO (FADDX1_RVT)                     0.05      0.21 r
+  intadd_1/U29/CO (FADDX1_RVT)                     0.05      0.26 r
+  intadd_1/U28/CO (FADDX1_RVT)                     0.05      0.31 r
+  intadd_1/U27/CO (FADDX1_RVT)                     0.05      0.36 r
+  intadd_1/U26/CO (FADDX1_RVT)                     0.05      0.42 r
+  intadd_1/U25/CO (FADDX1_RVT)                     0.05      0.47 r
+  intadd_1/U24/CO (FADDX1_RVT)                     0.05      0.52 r
+  intadd_1/U23/CO (FADDX1_RVT)                     0.06      0.58 r
+  U70/Y (AOI21X1_RVT)                              0.05      0.63 f
+  U108/Y (XNOR2X1_RVT)                             0.08      0.71 r
+  Sum[12] (out)                                    0.00      0.71 r
+  data arrival time                                          0.71
+
+  max_delay to non-endpoint                        1.50      1.50
+  data required time                                         1.50
+  ------------------------------------------------------------------------
+  data required time                                         1.50
+  data arrival time                                         -0.71
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.79
+
+
+1

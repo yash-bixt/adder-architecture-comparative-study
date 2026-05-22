@@ -1,0 +1,95 @@
+[icc2-lic Tue Apr 21 18:17:09 2026] Command 'report_constraints' requires licenses
+[icc2-lic Tue Apr 21 18:17:09 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Tue Apr 21 18:17:09 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Tue Apr 21 18:17:09 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Check-out of alternate set of keys directly with queueing was successful
+[icc2-lic Tue Apr 21 18:17:09 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Tue Apr 21 18:17:09 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Tue Apr 21 18:17:09 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Tue Apr 21 18:17:09 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:17:09 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:17:09 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : constraint
+        -all_violators
+Design : han_carlson_32
+Version: U-2022.12-SP3
+Date   : Tue Apr 21 18:17:09 2026
+****************************************
+
+   late_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   Mode: FUNC Corner: TT
+   Scenario: SCEN_TT
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   Sum[20]                      0.06           0.02           0.04  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: FUNC Corner: TT
+   Scenario: SCEN_TT
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   ropt_net_60                  9.00           8.12           0.88  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+
+   Mode: FUNC Corner: TT
+   Scenario: SCEN_TT
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+  Mode: FUNC
+  Corner: TT
+  Scenario: SCEN_TT
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 0
+1

@@ -1,0 +1,178 @@
+[icc2-lic Sun Mar 22 19:38:41 2026] Command 'report_power' requires licenses
+[icc2-lic Sun Mar 22 19:38:41 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Mar 22 19:38:41 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Mar 22 19:38:41 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Mar 22 19:38:41 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 22 19:38:41 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 22 19:38:41 2026] Check-out of alternate set of keys directly with queueing was successful
+Warning: No valid clocks available in mode 'rcla_32'. Setting clock frequency to 1 GHz. (POW-034)
+****************************************
+Report : power
+        -significant_digits 2
+Design : rcla_32
+Version: U-2022.12-SP3
+Date   : Sun Mar 22 19:38:41 2026
+****************************************
+Information: Activity propagation will be performed for scenario func_tt.
+Information: Doing activity propagation for mode 'func' and corner 'tt' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario func_tt (POW-052)
+Warning: No valid clocks available in mode 'rcla_32'. Setting clock frequency to 1 GHz. (POW-034)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 6 ****
+Information: Propagated activity on scenario func_ff identical to that on func_tt (POW-006)
+Information: Propagated activity on scenario func_ss identical to that on func_ff (POW-006)
+Mode: func
+Corner: ff
+Scenario: func_ff
+Voltage: 0.85
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+Warning: No valid clocks available in mode 'rcla_32'. Setting clock frequency to 1 GHz. (POW-034)
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port A on cell intadd_0/U32 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell intadd_0/U32 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CO on cell intadd_0/U32 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port S on cell intadd_0/U32 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port S on cell intadd_0/U32 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A on cell intadd_0/U31 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port B on cell intadd_0/U31 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CO on cell intadd_0/U31 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port S on cell intadd_0/U31 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port S on cell intadd_0/U31 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = -2.08e+07 pW (148.3%)
+  Net Switching Power    = 6.76e+06 pW (-48.3%)
+Total Dynamic Power      = -1.40e+07 pW (100.0%)
+
+Cell Leakage Power       = 6.42e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational            -2.08e+07               6.76e+06               6.42e+08               6.28e+08    (100.0%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                    -2.08e+07 pW            6.76e+06 pW            6.42e+08 pW            6.28e+08 pW
+Mode: func
+Corner: ss
+Scenario: func_ss
+Voltage: 0.85
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+Warning: No valid clocks available in mode 'rcla_32'. Setting clock frequency to 1 GHz. (POW-034)
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = -2.08e+07 pW (148.3%)
+  Net Switching Power    = 6.76e+06 pW (-48.3%)
+Total Dynamic Power      = -1.40e+07 pW (100.0%)
+
+Cell Leakage Power       = 6.42e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational            -2.08e+07               6.76e+06               6.42e+08               6.28e+08    (100.0%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                    -2.08e+07 pW            6.76e+06 pW            6.42e+08 pW            6.28e+08 pW
+Mode: func
+Corner: tt
+Scenario: func_tt
+Voltage: 0.85
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+Warning: No valid clocks available in mode 'rcla_32'. Setting clock frequency to 1 GHz. (POW-034)
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = -2.08e+07 pW (148.3%)
+  Net Switching Power    = 6.76e+06 pW (-48.3%)
+Total Dynamic Power      = -1.40e+07 pW (100.0%)
+
+Cell Leakage Power       = 6.42e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational            -2.08e+07               6.76e+06               6.42e+08               6.28e+08    (100.0%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                    -2.08e+07 pW            6.76e+06 pW            6.42e+08 pW            6.28e+08 pW
+1

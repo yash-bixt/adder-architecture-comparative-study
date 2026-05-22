@@ -1,0 +1,89 @@
+[icc2-lic Sun Mar 15 23:11:51 2026] Command 'report_power' requires licenses
+[icc2-lic Sun Mar 15 23:11:51 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 15 23:11:51 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun Mar 15 23:11:51 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 15 23:11:51 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun Mar 15 23:11:51 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 15 23:11:51 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun Mar 15 23:11:51 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 15 23:11:51 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun Mar 15 23:11:51 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun Mar 15 23:11:51 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun Mar 15 23:11:51 2026] Check-out of alternate set of keys directly with queueing was successful
+Warning: No valid clocks available in mode 'brent_kung_32'. Setting clock frequency to 1 GHz. (POW-034)
+****************************************
+Report : power
+        -significant_digits 2
+Design : brent_kung_32
+Version: U-2022.12-SP3
+Date   : Sun Mar 15 23:11:51 2026
+****************************************
+Information: Activity propagation will be performed for scenario func_typ.
+Information: Doing activity propagation for mode 'func' and corner 'typ' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario func_typ (POW-052)
+Warning: No valid clocks available in mode 'brent_kung_32'. Setting clock frequency to 1 GHz. (POW-034)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: func
+Corner: typ
+Scenario: func_typ
+Voltage: 0.85
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+Warning: No valid clocks available in mode 'brent_kung_32'. Setting clock frequency to 1 GHz. (POW-034)
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U35 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015984 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A3 on cell U44 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.014610 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U44 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.014610 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A2 on cell U47 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015297 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U47 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015297 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A1 on cell U52 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013447 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A2 on cell U52 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015965 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U52 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013447 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port A2 on cell U53 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013447 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Y on cell U53 for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.013447 (POW-046)
+
+  Cell Internal Power    = 4.83e+07 pW ( 62.8%)
+  Net Switching Power    = 2.86e+07 pW ( 37.2%)
+Total Dynamic Power      = 7.69e+07 pW (100.0%)
+
+Cell Leakage Power       = 7.15e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+register                  0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             4.83e+07               2.86e+07               7.15e+08               7.92e+08    (100.0%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     4.83e+07 pW            2.86e+07 pW            7.15e+08 pW            7.92e+08 pW
+1

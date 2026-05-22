@@ -1,0 +1,1107 @@
+[icc2-lic Tue Apr 21 18:18:29 2026] Command 'report_timing' requires licenses
+[icc2-lic Tue Apr 21 18:18:29 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:18:29 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Tue Apr 21 18:18:29 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:18:29 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Apr 21 18:18:29 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:18:29 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Tue Apr 21 18:18:29 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:18:29 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Tue Apr 21 18:18:29 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Apr 21 18:18:29 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Apr 21 18:18:29 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 50
+        -report_by design
+Design : kogge_stone_adder
+Version: U-2022.12-SP3
+Date   : Tue Apr 21 18:18:29 2026
+****************************************
+
+  Startpoint: A[24] (input port clocked by VCLK)
+  Endpoint: Sum[25] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  A[24] (in)                                       0.01      0.01 f
+  U511/Y (AO222X1_RVT)                             0.03      0.04 f
+  ctmTdsLR_1_42/Y (OA21X1_RVT)                     0.04      0.08 f
+  Sum[25] (out)                                    0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: B[10] (input port clocked by VCLK)
+  Endpoint: Sum[10] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[10] (in)                                       0.01      0.01 r
+  ctmTdsLR_1_149/Y (XOR3X1_RVT)                    0.07      0.08 f
+  Sum[10] (out)                                    0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: A[28] (input port clocked by VCLK)
+  Endpoint: Sum[29] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  A[28] (in)                                       0.01      0.01 f
+  U527/Y (AO22X1_RVT)                              0.04      0.05 f
+  U528/SO (HADDX1_RVT)                             0.03      0.08 r
+  Sum[29] (out)                                    0.00      0.08 r
+  data arrival time                                          0.08
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.03
+
+
+
+  Startpoint: B[16] (input port clocked by VCLK)
+  Endpoint: Sum[17] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[16] (in)                                       0.01      0.01 f
+  U491/Y (AO222X1_RVT)                             0.04      0.05 f
+  U493/Y (OA21X1_RVT)                              0.03      0.09 f
+  Sum[17] (out)                                    0.00      0.09 f
+  data arrival time                                          0.09
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.04
+
+
+
+  Startpoint: B[20] (input port clocked by VCLK)
+  Endpoint: Sum[21] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[20] (in)                                       0.01      0.01 f
+  U501/Y (AO222X1_RVT)                             0.04      0.05 f
+  U503/Y (OA21X1_RVT)                              0.04      0.09 f
+  Sum[21] (out)                                    0.00      0.09 f
+  data arrival time                                          0.09
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.04
+
+
+
+  Startpoint: A[7] (input port clocked by VCLK)
+  Endpoint: Sum[7] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.02
+  input external delay                             0.00      0.02 r
+  A[7] (in)                                        0.02      0.02 r
+  U526/S (FADDX1_RVT)                              0.04      0.06 r
+  ropt_h_inst_155/Y (NBUFFX2_RVT)                  0.03      0.09 r
+  Sum[7] (out)                                     0.00      0.09 r
+  data arrival time                                          0.09
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.04
+
+
+
+  Startpoint: B[4] (input port clocked by VCLK)
+  Endpoint: Sum[4] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[4] (in)                                        0.01      0.01 f
+  U302/Y (NAND2X0_RVT)                             0.02      0.03 r
+  U459/Y (NAND2X0_RVT)                             0.02      0.05 f
+  U460/Y (XOR2X1_RVT)                              0.04      0.09 r
+  Sum[4] (out)                                     0.00      0.09 r
+  data arrival time                                          0.09
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.04
+
+
+
+  Startpoint: B[9] (input port clocked by VCLK)
+  Endpoint: Sum[9] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.02
+  input external delay                             0.00      0.02 r
+  B[9] (in)                                        0.02      0.02 r
+  U219/Y (XOR3X1_RVT)                              0.07      0.09 f
+  Sum[9] (out)                                     0.00      0.09 f
+  data arrival time                                          0.09
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.09
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.04
+
+
+
+  Startpoint: B[31] (input port clocked by VCLK)
+  Endpoint: Cout (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[31] (in)                                       0.01      0.01 r
+  U519/Y (INVX0_RVT)                               0.02      0.04 f
+  ctmTdsLR_1_97/Y (OAI221X1_RVT)                   0.06      0.10 r
+  Cout (out)                                       0.00      0.10 r
+  data arrival time                                          0.10
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+
+  Startpoint: A[31] (input port clocked by VCLK)
+  Endpoint: Sum[31] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  A[31] (in)                                       0.01      0.01 r
+  U520/Y (INVX0_RVT)                               0.03      0.04 f
+  ctmTdsLR_2_127/Y (MUX41X1_RVT)                   0.06      0.10 f
+  Sum[31] (out)                                    0.00      0.10 f
+  data arrival time                                          0.10
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+
+  Startpoint: B[2] (input port clocked by VCLK)
+  Endpoint: Sum[2] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[2] (in)                                        0.01      0.01 f
+  U299/Y (NAND2X0_RVT)                             0.02      0.03 r
+  U451/Y (NAND2X0_RVT)                             0.02      0.05 f
+  U452/Y (XNOR2X1_RVT)                             0.05      0.10 f
+  Sum[2] (out)                                     0.00      0.10 f
+  data arrival time                                          0.10
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+
+  Startpoint: A[8] (input port clocked by VCLK)
+  Endpoint: Sum[8] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  A[8] (in)                                        0.01      0.01 f
+  ropt_h_inst_151/Y (NBUFFX2_RVT)                  0.02      0.03 f
+  U408/S (FADDX1_RVT)                              0.04      0.07 r
+  ropt_h_inst_157/Y (NBUFFX2_RVT)                  0.03      0.10 r
+  Sum[8] (out)                                     0.00      0.10 r
+  data arrival time                                          0.10
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.10
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.05
+
+
+
+  Startpoint: B[6] (input port clocked by VCLK)
+  Endpoint: Sum[6] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[6] (in)                                        0.01      0.01 f
+  U305/Y (NAND2X0_RVT)                             0.02      0.03 r
+  U467/Y (NAND2X0_RVT)                             0.02      0.05 f
+  U468/Y (XNOR2X1_RVT)                             0.05      0.11 f
+  Sum[6] (out)                                     0.00      0.11 f
+  data arrival time                                          0.11
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: B[5] (input port clocked by VCLK)
+  Endpoint: Sum[5] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[5] (in)                                        0.01      0.01 f
+  U304/Y (NAND2X0_RVT)                             0.04      0.04 r
+  U463/Y (NAND2X0_RVT)                             0.02      0.07 f
+  U464/Y (XOR2X1_RVT)                              0.04      0.11 r
+  Sum[5] (out)                                     0.00      0.11 r
+  data arrival time                                          0.11
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: B[13] (input port clocked by VCLK)
+  Endpoint: Sum[13] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[13] (in)                                       0.01      0.01 r
+  U388/Y (AND2X1_RVT)                              0.03      0.03 r
+  U397/Y (OR2X1_RVT)                               0.04      0.07 r
+  U474/Y (XOR2X1_RVT)                              0.04      0.11 r
+  Sum[13] (out)                                    0.00      0.11 r
+  data arrival time                                          0.11
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: B[1] (input port clocked by VCLK)
+  Endpoint: Sum[1] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[1] (in)                                        0.01      0.01 f
+  U298/Y (NAND2X0_RVT)                             0.03      0.04 r
+  U447/Y (NAND2X0_RVT)                             0.02      0.07 f
+  U448/Y (XOR2X1_RVT)                              0.04      0.11 r
+  Sum[1] (out)                                     0.00      0.11 r
+  data arrival time                                          0.11
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: B[12] (input port clocked by VCLK)
+  Endpoint: Sum[12] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[12] (in)                                       0.01      0.01 r
+  U390/Y (AND2X1_RVT)                              0.03      0.04 r
+  U401/Y (OR2X1_RVT)                               0.04      0.07 r
+  U472/Y (XOR2X1_RVT)                              0.04      0.11 r
+  Sum[12] (out)                                    0.00      0.11 r
+  data arrival time                                          0.11
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: A[28] (input port clocked by VCLK)
+  Endpoint: Sum[28] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  A[28] (in)                                       0.01      0.01 r
+  ctmTdsLR_1_88/Y (OA21X1_RVT)                     0.03      0.04 r
+  U313/Y (INVX0_RVT)                               0.02      0.06 f
+  U482/Y (XOR2X1_RVT)                              0.05      0.11 r
+  Sum[28] (out)                                    0.00      0.11 r
+  data arrival time                                          0.11
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: B[16] (input port clocked by VCLK)
+  Endpoint: Sum[16] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[16] (in)                                       0.01      0.01 r
+  U372/Y (AND2X1_RVT)                              0.03      0.04 r
+  U380/Y (OR2X1_RVT)                               0.03      0.07 r
+  U480/Y (XOR2X1_RVT)                              0.04      0.11 r
+  Sum[16] (out)                                    0.00      0.11 r
+  data arrival time                                          0.11
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.11
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.06
+
+
+
+  Startpoint: A[15] (input port clocked by VCLK)
+  Endpoint: Sum[15] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  A[15] (in)                                       0.01      0.01 f
+  U382/Y (XNOR2X1_RVT)                             0.05      0.06 f
+  ctmTdsLR_1_77/Y (AOI221X1_RVT)                   0.06      0.12 r
+  Sum[15] (out)                                    0.00      0.12 r
+  data arrival time                                          0.12
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.12
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: A[24] (input port clocked by VCLK)
+  Endpoint: Sum[24] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  A[24] (in)                                       0.01      0.01 r
+  U338/Y (AND2X1_RVT)                              0.03      0.04 r
+  U342/Y (OR2X1_RVT)                               0.04      0.07 r
+  U478/Y (XOR2X1_RVT)                              0.05      0.12 r
+  Sum[24] (out)                                    0.00      0.12 r
+  data arrival time                                          0.12
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.12
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: B[20] (input port clocked by VCLK)
+  Endpoint: Sum[20] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[20] (in)                                       0.01      0.01 r
+  U362/Y (AND2X1_RVT)                              0.03      0.04 r
+  U366/Y (OR2X1_RVT)                               0.04      0.07 r
+  ctmTdsLR_2_106/Y (XNOR2X1_RVT)                   0.05      0.12 r
+  Sum[20] (out)                                    0.00      0.12 r
+  data arrival time                                          0.12
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.12
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: B[3] (input port clocked by VCLK)
+  Endpoint: Sum[3] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  B[3] (in)                                        0.01      0.01 f
+  U301/Y (NAND2X0_RVT)                             0.03      0.04 r
+  U454/Y (NAND2X0_RVT)                             0.03      0.07 f
+  U455/Y (XNOR2X1_RVT)                             0.05      0.12 f
+  Sum[3] (out)                                     0.00      0.12 f
+  data arrival time                                          0.12
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.12
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: A[26] (input port clocked by VCLK)
+  Endpoint: Sum[27] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  A[26] (in)                                       0.01      0.01 r
+  ctmTdsLR_1_58/Y (NOR2X0_RVT)                     0.05      0.05 f
+  U282/Y (OR2X1_RVT)                               0.03      0.08 f
+  ctmTdsLR_2_131/Y (OA21X1_RVT)                    0.04      0.12 f
+  Sum[27] (out)                                    0.00      0.12 f
+  data arrival time                                          0.12
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.12
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.07
+
+
+
+  Startpoint: A[26] (input port clocked by VCLK)
+  Endpoint: Sum[26] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  A[26] (in)                                       0.01      0.01 r
+  U322/Y (AND2X1_RVT)                              0.03      0.04 r
+  U330/Y (OR2X1_RVT)                               0.04      0.08 r
+  U479/Y (XOR2X1_RVT)                              0.05      0.13 r
+  Sum[26] (out)                                    0.00      0.13 r
+  data arrival time                                          0.13
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.08
+
+
+
+  Startpoint: A[22] (input port clocked by VCLK)
+  Endpoint: Sum[22] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  A[22] (in)                                       0.01      0.01 r
+  U347/Y (AND2X1_RVT)                              0.03      0.04 r
+  U354/Y (OR2X1_RVT)                               0.04      0.08 r
+  U477/Y (XOR2X1_RVT)                              0.05      0.13 r
+  Sum[22] (out)                                    0.00      0.13 r
+  data arrival time                                          0.13
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.08
+
+
+
+  Startpoint: B[18] (input port clocked by VCLK)
+  Endpoint: Sum[19] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[18] (in)                                       0.01      0.01 r
+  ctmTdsLR_1_72/Y (NOR2X0_RVT)                     0.04      0.05 f
+  U494/Y (OR2X1_RVT)                               0.03      0.08 f
+  ctmTdsLR_2_79/Y (OA21X1_RVT)                     0.05      0.13 f
+  Sum[19] (out)                                    0.00      0.13 f
+  data arrival time                                          0.13
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.08
+
+
+
+  Startpoint: B[18] (input port clocked by VCLK)
+  Endpoint: Sum[18] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[18] (in)                                       0.01      0.01 r
+  U418/Y (AND2X1_RVT)                              0.03      0.04 r
+  U422/Y (NOR2X0_RVT)                              0.05      0.09 f
+  U481/Y (XOR2X1_RVT)                              0.04      0.13 r
+  Sum[18] (out)                                    0.00      0.13 r
+  data arrival time                                          0.13
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.08
+
+
+
+  Startpoint: A[23] (input port clocked by VCLK)
+  Endpoint: Sum[23] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  A[23] (in)                                       0.01      0.01 f
+  U350/Y (XNOR2X1_RVT)                             0.04      0.05 f
+  ctmTdsLR_1_14/Y (OR3X2_RVT)                      0.04      0.09 f
+  U509/Y (AND2X1_RVT)                              0.04      0.13 f
+  Sum[23] (out)                                    0.00      0.13 f
+  data arrival time                                          0.13
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.13
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.08
+
+
+
+  Startpoint: A[11] (input port clocked by VCLK)
+  Endpoint: Sum[11] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 f
+  A[11] (in)                                       0.01      0.01 f
+  U411/Y (XNOR2X1_RVT)                             0.05      0.06 f
+  U487/Y (OR3X1_RVT)                               0.05      0.10 f
+  U517/Y (AND2X1_RVT)                              0.03      0.14 f
+  Sum[11] (out)                                    0.00      0.14 f
+  data arrival time                                          0.14
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.09
+
+
+
+  Startpoint: B[30] (input port clocked by VCLK)
+  Endpoint: Sum[30] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  B[30] (in)                                       0.01      0.01 r
+  U317/Y (XNOR2X1_RVT)                             0.05      0.06 r
+  ctmTdsLR_3_31/Y (INVX0_RVT)                      0.02      0.07 f
+  ctmTdsLR_2_30/Y (OR3X1_RVT)                      0.04      0.11 f
+  ctmTdsLR_1_29/Y (NAND3X0_RVT)                    0.03      0.14 r
+  Sum[30] (out)                                    0.00      0.14 r
+  data arrival time                                          0.14
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.09
+
+
+
+  Startpoint: A[14] (input port clocked by VCLK)
+  Endpoint: Sum[14] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  A[14] (in)                                       0.01      0.01 r
+  U383/Y (AND2X1_RVT)                              0.03      0.04 r
+  U387/Y (OR2X1_RVT)                               0.04      0.08 r
+  ctmTdsLR_2_76/Y (XNOR2X1_RVT)                    0.06      0.14 r
+  Sum[14] (out)                                    0.00      0.14 r
+  data arrival time                                          0.14
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.14
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.09
+
+
+
+  Startpoint: Cin (input port clocked by VCLK)
+  Endpoint: Sum[0] (output port clocked by VCLK)
+  Mode: FUNC
+  Corner: FF
+  Scenario: SCEN_FF
+  Path Group: **in2out_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.01
+  input external delay                             0.00      0.01 r
+  Cin (in)                                         0.01      0.01 r
+  ctmTdsLR_2_95/Y (XOR2X1_RVT)                     0.04      0.05 r
+  ropt_h_inst_150/Y (DELLN1X2_RVT)                 0.10      0.16 r
+  Sum[0] (out)                                     0.00      0.16 r
+  data arrival time                                          0.16
+
+  clock VCLK (rise edge)                           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  clock uncertainty                                0.05      0.05
+  output external delay                           -0.00      0.05
+  data required time                                         0.05
+  ------------------------------------------------------------------------
+  data required time                                         0.05
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.11
+
+
+1

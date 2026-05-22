@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : kogge_stone_adder
+Version: T-2022.03-SP5
+Date   : Sat Feb 28 18:38:36 2026
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: A[0] (input port)
+  Endpoint: Sum[31] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  kogge_stone_adder  8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  A[0] (in)                                0.00       0.00 f
+  U296/Y (NOR2X0_RVT)                      0.05       0.05 r
+  U228/Y (OAI21X1_RVT)                     0.07       0.12 f
+  U260/Y (AO21X1_RVT)                      0.06       0.18 f
+  U526/CO (FADDX1_RVT)                     0.08       0.26 f
+  U408/CO (FADDX1_RVT)                     0.09       0.35 f
+  U486/Y (AOI21X1_RVT)                     0.08       0.42 r
+  U487/Y (OR3X1_RVT)                       0.06       0.48 r
+  U265/Y (AND3X1_RVT)                      0.05       0.54 r
+  U264/Y (AO21X1_RVT)                      0.04       0.58 r
+  U496/Y (OA21X1_RVT)                      0.05       0.63 r
+  U497/Y (NOR2X0_RVT)                      0.06       0.69 f
+  U504/Y (NOR2X0_RVT)                      0.06       0.75 r
+  U506/Y (OA21X1_RVT)                      0.05       0.80 r
+  U508/Y (OR3X1_RVT)                       0.06       0.86 r
+  U275/Y (AO21X1_RVT)                      0.06       0.91 r
+  U518/Y (OA21X1_RVT)                      0.05       0.96 r
+  U522/Y (XOR2X1_RVT)                      0.08       1.04 f
+  Sum[31] (out)                            0.00       1.04 f
+  data arrival time                                   1.04
+
+  max_delay                                1.20       1.20
+  output external delay                    0.00       1.20
+  data required time                                  1.20
+  -----------------------------------------------------------
+  data required time                                  1.20
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         0.16
+
+
+1
