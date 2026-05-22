@@ -141,11 +141,10 @@ adder-architecture-comparative-study/
 ├── rtl/                    # Verilog RTL source files
 │
 ├── scripts/
-│   ├── synthesis/          # Design Compiler TCL scripts
 │   ├── pnr/                # ICC2 automation scripts
 │   ├── primetime/          # PrimeTime STA scripts
 │   ├── starrc/             # StarRC extraction scripts
-│   └── python/             # Python automation and analysis scripts
+│   
 │
 ├── testbench/              # Verilog testbenches
 │
