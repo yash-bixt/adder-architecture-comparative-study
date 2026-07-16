@@ -161,6 +161,10 @@ adder-architecture-comparative-study/
 
 ---
 
-# Acknowledgments
+## Acknowledgments
 
 I sincerely thank **Prof. Venkatnarayan Hariharan** (<venkatnarayan.h@snu.edu.in>) for his guidance, mentorship, and continuous support throughout this project.
+
+I also gratefully acknowledge the **Department of Electrical Engineering, Shiv Nadar Institution of Eminence**, and **MeitY–CDAC (C2S Scheme)** for providing access to the Synopsys EDA tools and the SAED 32nm standard-cell library.
+
+
