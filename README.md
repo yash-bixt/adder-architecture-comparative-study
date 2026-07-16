@@ -2,7 +2,12 @@
 
 This work was done at **Shiv Nadar Institution of Eminence** under the supervision of **Prof. Venkatnarayan Hariharan** as part of the **Opportunities for Undergraduate Research (OUR2025-26)** program, for the **Electrical & Computer Engineering BTech degree**.
 
-## Table of Contents - [Overview](#overview) - [Implemented Architectures](#implemented-architectures) - [ASIC Design Flow](#asic-design-flow) - [Technology Details](#technology-details) - [Repository Structure](#repository-structure)
+## Table of Contents
+- [Overview](#overview)
+-  - [Implemented Architectures](#implemented-architectures)
+   -  - [ASIC Design Flow](#asic-design-flow)
+      -  - [Technology Details](#technology-details)
+         -  - [Repository Structure](#repository-structure)
 
 ## Overview
 
