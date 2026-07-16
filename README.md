@@ -4,10 +4,10 @@ This work was done at **Shiv Nadar Institution of Eminence** under the supervisi
 
 ## Table of Contents
 - [Overview](#overview)
--  - [Implemented Architectures](#implemented-architectures)
-   -  - [ASIC Design Flow](#asic-design-flow)
-      -  - [Technology Details](#technology-details)
-         -  - [Repository Structure](#repository-structure)
+- [Implemented Architectures](#implemented-architectures)
+- [ASIC Design Flow](#asic-design-flow)
+- [Technology Details](#technology-details)
+- [Repository Structure](#repository-structure)
 
 ## Overview
 
