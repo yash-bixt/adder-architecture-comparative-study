@@ -148,3 +148,9 @@ adder-architecture-comparative-study/
 │
 ├── .gitignore
 └── README.md
+
+---
+
+# Acknowledgments
+
+I sincerely thank Prof. Venkatnarayan Hariharan (venkatnarayan.h@snu.edu.in) for his guidance, mentorship, and continuous support throughout this project.
