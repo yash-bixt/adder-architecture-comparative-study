@@ -142,15 +142,15 @@ adder-architecture-comparative-study/
 │   ├── pnr/                # ICC2 automation scripts
 │   ├── primetime/          # PrimeTime STA scripts
 │   ├── starrc/             # StarRC extraction scripts
-│   
 │
 ├── testbench/              # Verilog testbenches
 │
 ├── .gitignore
 └── README.md
+```
 
 ---
 
 # Acknowledgments
 
-I sincerely thank Prof. Venkatnarayan Hariharan (venkatnarayan.h@snu.edu.in) for his guidance, mentorship, and continuous support throughout this project.
+I sincerely thank **Prof. Venkatnarayan Hariharan** (<venkatnarayan.h@snu.edu.in>) for his guidance, mentorship, and continuous support throughout this project.
