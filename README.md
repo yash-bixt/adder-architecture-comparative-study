@@ -127,8 +127,6 @@ adder-architecture-comparative-study/
 │   ├── sdc/                # Timing constraint files
 │   └── spef/               # Extracted parasitic files
 │
-├── paper/                  # IEEE paper drafts and publication material
-│
 ├── reports/
 │   ├── synthesis/          # Design Compiler reports
 │   ├── pnr/                # ICC2 physical design reports
