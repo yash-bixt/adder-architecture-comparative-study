@@ -1,14 +1,15 @@
 # Comparative Study of 32-Bit Adder Architectures Using Synopsys ASIC Flow in 32nm SAED Technology
 
-This work was done at **Shiv Nadar Institution of Eminence** under the supervision of **Prof. Venkatnarayan Hariharan** as part of the **Opportunities for Undergraduate Research (OUR2025-26)** program, for the **Electrical & Computer Engineering BTech degree**.
+This work was conducted at **Shiv Nadar Institution of Eminence** under the supervision of **Prof. Venkatnarayan Hariharan** as part of the **Opportunities for Undergraduate Research (OUR2025–26)** program for the **B.Tech. in Electrical & Computer Engineering**.
 
 ## Table of Contents
+
 - [Overview](#overview)
 - [Implemented Architectures](#implemented-architectures)
 - [ASIC Design Flow](#asic-design-flow)
 - [Technology Details](#technology-details)
 - [Repository Structure](#repository-structure)
-
+- [Acknowledgments](#acknowledgments)
 ## Overview
 
 This repository presents a comprehensive ASIC implementation and comparative study of multiple 32-bit adder architectures using industry-standard Synopsys EDA tools and the SAED 32nm standard cell library.
